@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days for event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p class="logo">&lt;<b>GN</b>code  /&gt;</p>
+        <h1 class="title">How many days until the event?</h1>
+    </header>
+
+    <main class="app">
+        <form class="form">
+            <input required placeholder="Event's name" type="text" class="app__name">
+            <input id="app__date" required type="date" class="app__date">
+            <button type="submit" class="app__btn">Enviar</button>
+        </form>
+
+        <div class="app__events">
+        </div>
+    </main>
+
+    <div id="ambient"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

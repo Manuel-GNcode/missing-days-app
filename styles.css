@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(45deg, hsla(0, 100%, 30%, 1) 0%, hsla(0, 100%, 12%, 1) 100%);
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+}
+header {
+    margin: 40px 0;
+    color: #E9E9E5;
+}
+.logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.logo b {
+    color: #ff0000;
+}
+
+.app {
+    margin: 0 auto;
+}
+.form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #9B3922;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+input, .app__btn {
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #3D0000;
+    background-color: #E9E9E5;
+}
+.app__name::placeholder {
+    color: #9b382285;
+}
+.app__btn {
+    background-color: #F2613F;
+    cursor: pointer;
+    color: #E9E9E5;
+    font-weight: bold;
+}
+
+.app__events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9E9E5;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #3D0000;
+    font-weight: bold;
+    height: 50px;
+    width: 80%;
+}
+@media screen and (min-width: 800px) {
+    .event {
+        width: 50%;
+    }
+}
+.days {
+    background-color: #9B3922;
+    padding: 0 5px;
+    color: #E9E9E5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 55px;
+}
+svg:hover path {
+    fill: #ff0000;
+    stroke: #ff0000;
+}
+.delete {
+    cursor: pointer;
+    background-color: #E9E9E5;
+    border: none;
+}
